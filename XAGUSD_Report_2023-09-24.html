@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" />
+
+<link rel="shortcut icon" type="image/png" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+<link rel="shortcut icon" sizes="192x192" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+<link rel="apple-touch-icon" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+
+<script src="https://kit.fontawesome.com/256c714d9a.js"></script>
+<link
+  href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata|Karla|Rubik&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://datapane-cdn.com/v0.16.7/report/index.css" />
+<link rel="stylesheet" href="https://datapane-cdn.com/v0.16.7/report/tailwind.css" />
+<script>
+  // analytics config
+  // TODO -- pass these in as props for consistency?
+  window.dpAppRunner = "False" === "True";
+  window.dpLocal = true;
+    window.dpLocalViewEvent = true;
+    window.dpReportId = "f9cfec1c040a4e72a21c465eaf1d9d30";
+    window.dpAuthorId = "2964d050ca584b3b9e68bfe8420b3762";
+
+  /* construct the view */
+  const htmlHeader = `<style type="text/css">:root {
+    --dp-accent-color: #4E46E5;
+    --dp-bg-color: #FFF;
+    --dp-text-align: left;
+    --dp-font-family: Inter, ui-sans-serif, system-ui;
+}</style>`;
+  window.reportProps = { htmlHeader, isLightProse: false, isOrg: false, mode: "VIEW", reportWidthClass: "max-w-full" };
+
+  if (!window.dpAppRunner) {
+      // pass app data via props if in local (static) mode, otherwise this data is fetched from the server
+      window.reportProps["appData"] = { data: { result: {"view_xml": "\u003cView version=\"1\" fragment=\"false\"\u003e\u003cTable type=\"application/vnd.datapane.table+html\" src=\"ref://4a07467e34\"/\u003e\u003c/View\u003e", "assets": {"4a07467e34": {"src": "data:application/vnd.datapane.table+html;base64,PHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8dGg+PC90aD4KICAgICAgPHRoPlN5bWJvbDwvdGg+CiAgICAgIDx0aD5QL0w8L3RoPgogICAgICA8dGg+VGltZWZyYW1lPC90aD4KICAgICAgPHRoPlJSPC90aD4KICAgICAgPHRoPmZpYmJvX2VudHJ5PC90aD4KICAgICAgPHRoPkJyZWFrX1BvaW50X0VudHJ5PC90aD4KICAgICAgPHRoPlByb2ZpdGFibGVfVHJhZGVzPC90aD4KICAgICAgPHRoPkxvc2luZ19UcmFkZXM8L3RoPgogICAgICA8dGg+VG90YWxfVHJhZGVzPC90aD4KICAgIDwvdHI+CiAgPC90aGVhZD4KICA8dGJvZHk+CiAgICA8dHI+CiAgICAgIDx0aD4wPC90aD4KICAgICAgPHRkPlhBR1VTRDwvdGQ+CiAgICAgIDx0ZD4tNjkuMCU8L3RkPgogICAgICA8dGQ+TTMwPC90ZD4KICAgICAgPHRkPjAuNTwvdGQ+CiAgICAgIDx0ZD4wLjc1PC90ZD4KICAgICAgPHRkPmxvd2VzdF9jYW5kbGU8L3RkPgogICAgICA8dGQ+MTQwPC90ZD4KICAgICAgPHRkPjEzOTwvdGQ+CiAgICAgIDx0ZD4yNzk8L3RkPgogICAgPC90cj4KICAgIDx0cj4KICAgICAgPHRoPjE8L3RoPgogICAgICA8dGQ+WEFHVVNEPC90ZD4KICAgICAgPHRkPi00My4wJTwvdGQ+CiAgICAgIDx0ZD5NMzA8L3RkPgogICAgICA8dGQ+MS4wPC90ZD4KICAgICAgPHRkPjAuNzU8L3RkPgogICAgICA8dGQ+bG93ZXN0X2NhbmRsZTwvdGQ+CiAgICAgIDx0ZD4xMTg8L3RkPgogICAgICA8dGQ+MTYxPC90ZD4KICAgICAgPHRkPjI3OTwvdGQ+CiAgICA8L3RyPgogICAgPHRyPgogICAgICA8dGg+MjwvdGg+CiAgICAgIDx0ZD5YQUdVU0Q8L3RkPgogICAgICA8dGQ+My41JTwvdGQ+CiAgICAgIDx0ZD5NMzA8L3RkPgogICAgICA8dGQ+MS41PC90ZD4KICAgICAgPHRkPjAuNzU8L3RkPgogICAgICA8dGQ+bG93ZXN0X2NhbmRsZTwvdGQ+CiAgICAgIDx0ZD4xMTM8L3RkPgogICAgICA8dGQ+MTY2PC90ZD4KICAgICAgPHRkPjI3OTwvdGQ+CiAgICA8L3RyPgogICAgPHRyPgogICAgICA8dGg+MzwvdGg+CiAgICAgIDx0ZD5YQUdVU0Q8L3RkPgogICAgICA8dGQ+MzYuMCU8L3RkPgogICAgICA8dGQ+TTMwPC90ZD4KICAgICAgPHRkPjIuMDwvdGQ+CiAgICAgIDx0ZD4wLjc1PC90ZD4KICAgICAgPHRkPmxvd2VzdF9jYW5kbGU8L3RkPgogICAgICA8dGQ+MTA1PC90ZD4KICAgICAgPHRkPjE3NDwvdGQ+CiAgICAgIDx0ZD4yNzk8L3RkPgogICAgPC90cj4KICAgIDx0cj4KICAgICAgPHRoPjQ8L3RoPgogICAgICA8dGQ+WEFHVVNEPC90ZD4KICAgICAgPHRkPjY3LjUlPC90ZD4KICAgICAgPHRkPk0zMDwvdGQ+CiAgICAgIDx0ZD4yLjU8L3RkPgogICAgICA8dGQ+MC43NTwvdGQ+CiAgICAgIDx0ZD5sb3dlc3RfY2FuZGxlPC90ZD4KICAgICAgPHRkPjk5PC90ZD4KICAgICAgPHRkPjE4MDwvdGQ+CiAgICAgIDx0ZD4yNzk8L3RkPgogICAgPC90cj4KICAgIDx0cj4KICAgICAgPHRoPjU8L3RoPgogICAgICA8dGQ+WEFHVVNEPC90ZD4KICAgICAgPHRkPjEwMS4wJTwvdGQ+CiAgICAgIDx0ZD5NMzA8L3RkPgogICAgICA8dGQ+My4wPC90ZD4KICAgICAgPHRkPjAuNzU8L3RkPgogICAgICA8dGQ+bG93ZXN0X2NhbmRsZTwvdGQ+CiAgICAgIDx0ZD45NTwvdGQ+CiAgICAgIDx0ZD4xODQ8L3RkPgogICAgICA8dGQ+Mjc5PC90ZD4KICAgIDwvdHI+CiAgICA8dHI+CiAgICAgIDx0aD42PC90aD4KICAgICAgPHRkPlhBR1VTRDwvdGQ+CiAgICAgIDx0ZD4xMzAuNSU8L3RkPgogICAgICA8dGQ+TTMwPC90ZD4KICAgICAgPHRkPjMuNTwvdGQ+CiAgICAgIDx0ZD4wLjc1PC90ZD4KICAgICAgPHRkPmxvd2VzdF9jYW5kbGU8L3RkPgogICAgICA8dGQ+OTE8L3RkPgogICAgICA8dGQ+MTg4PC90ZD4KICAgICAgPHRkPjI3OTwvdGQ+CiAgICA8L3RyPgogICAgPHRyPgogICAgICA8dGg+NzwvdGg+CiAgICAgIDx0ZD5YQUdVU0Q8L3RkPgogICAgICA8dGQ+MTUyLjAlPC90ZD4KICAgICAgPHRkPk0zMDwvdGQ+CiAgICAgIDx0ZD40LjA8L3RkPgogICAgICA8dGQ+MC43NTwvdGQ+CiAgICAgIDx0ZD5sb3dlc3RfY2FuZGxlPC90ZD4KICAgICAgPHRkPjg2PC90ZD4KICAgICAgPHRkPjE5MjwvdGQ+CiAgICAgIDx0ZD4yNzg8L3RkPgogICAgPC90cj4KICAgIDx0cj4KICAgICAgPHRoPjg8L3RoPgogICAgICA8dGQ+WEFHVVNEPC90ZD4KICAgICAgPHRkPjEzMC4wJTwvdGQ+CiAgICAgIDx0ZD5NMzA8L3RkPgogICAgICA8dGQ+NS4wPC90ZD4KICAgICAgPHRkPjAuNzU8L3RkPgogICAgICA8dGQ+bG93ZXN0X2NhbmRsZTwvdGQ+CiAgICAgIDx0ZD42ODwvdGQ+CiAgICAgIDx0ZD4yMTA8L3RkPgogICAgICA8dGQ+Mjc4PC90ZD4KICAgIDwvdHI+CiAgPC90Ym9keT4KPC90YWJsZT4=", "hash": "4a07467e34", "size": 3188, "mime": "application/vnd.datapane.table+html"}}} }};
+  }
+</script>
+<script type="module">
+  import { mountReport } from "https://datapane-cdn.com/v0.16.7/report/index.es.js";
+  mountReport(window.reportProps);
+</script>
+  </head>
+  <body>
+      <div id="report"></div>
+  </body>
+</html>

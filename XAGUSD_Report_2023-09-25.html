@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" />
+
+<link rel="shortcut icon" type="image/png" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+<link rel="shortcut icon" sizes="192x192" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+<link rel="apple-touch-icon" href="https://datapane-cdn.com/static/v1/datapane-icon-192x192.png"/>
+
+<script src="https://kit.fontawesome.com/256c714d9a.js"></script>
+<link
+  href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700|Inconsolata|Karla|Rubik&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://datapane-cdn.com/v0.16.7/report/index.css" />
+<link rel="stylesheet" href="https://datapane-cdn.com/v0.16.7/report/tailwind.css" />
+<script>
+  // analytics config
+  // TODO -- pass these in as props for consistency?
+  window.dpAppRunner = "False" === "True";
+  window.dpLocal = true;
+    window.dpLocalViewEvent = true;
+    window.dpReportId = "4e4f419677f442fe9785b1a9b7752861";
+    window.dpAuthorId = "2964d050ca584b3b9e68bfe8420b3762";
+
+  /* construct the view */
+  const htmlHeader = `<style type="text/css">:root {
+    --dp-accent-color: #4E46E5;
+    --dp-bg-color: #FFF;
+    --dp-text-align: left;
+    --dp-font-family: Inter, ui-sans-serif, system-ui;
+}</style>`;
+  window.reportProps = { htmlHeader, isLightProse: false, isOrg: false, mode: "VIEW", reportWidthClass: "max-w-full" };
+
+  if (!window.dpAppRunner) {
+      // pass app data via props if in local (static) mode, otherwise this data is fetched from the server
+      window.reportProps["appData"] = { data: { result: {"view_xml": "\u003cView version=\"1\" fragment=\"false\"\u003e\u003cTable type=\"application/vnd.datapane.table+html\" src=\"ref://29ba1be8a2\"/\u003e\u003c/View\u003e", "assets": {"29ba1be8a2": {"src": "data:application/vnd.datapane.table+html;base64,PHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8dGg+PC90aD4KICAgICAgPHRoPlN5bWJvbDwvdGg+CiAgICAgIDx0aD5QL0w8L3RoPgogICAgICA8dGg+VGltZWZyYW1lPC90aD4KICAgICAgPHRoPlJSPC90aD4KICAgICAgPHRoPmZpYmJvX2VudHJ5PC90aD4KICAgICAgPHRoPkJyZWFrX1BvaW50X0VudHJ5PC90aD4KICAgICAgPHRoPlByb2ZpdGFibGVfVHJhZGVzPC90aD4KICAgICAgPHRoPkxvc2luZ19UcmFkZXM8L3RoPgogICAgICA8dGg+VG90YWxfVHJhZGVzPC90aD4KICAgIDwvdHI+CiAgPC90aGVhZD4KICA8dGJvZHk+CiAgICA8dHI+CiAgICAgIDx0aD4wPC90aD4KICAgICAgPHRkPlhBR1VTRDwvdGQ+CiAgICAgIDx0ZD4xNTEuMCU8L3RkPgogICAgICA8dGQ+TTMwPC90ZD4KICAgICAgPHRkPjQuMDwvdGQ+CiAgICAgIDx0ZD4wLjc1PC90ZD4KICAgICAgPHRkPmxvd2VzdF9jYW5kbGU8L3RkPgogICAgICA8dGQ+Nzk8L3RkPgogICAgICA8dGQ+MTY1PC90ZD4KICAgICAgPHRkPjI0NDwvdGQ+CiAgICA8L3RyPgogIDwvdGJvZHk+CjwvdGFibGU+", "hash": "29ba1be8a2", "size": 808, "mime": "application/vnd.datapane.table+html"}}} }};
+  }
+</script>
+<script type="module">
+  import { mountReport } from "https://datapane-cdn.com/v0.16.7/report/index.es.js";
+  mountReport(window.reportProps);
+</script>
+  </head>
+  <body>
+      <div id="report"></div>
+  </body>
+</html>
